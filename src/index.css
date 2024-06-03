@@ -40,6 +40,16 @@ body {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 1440px) {
+  .CardDisplay {
+    background: url("https://res.cloudinary.com/denpx8l6a/image/upload/v1705085796/vica9gpgngm9nlhnicvm.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 100vh;
+    width: 30%;
+    margin: 0;
+  }
+}
 
 .cards {
   max-width: 34.3rem;
@@ -56,6 +66,12 @@ body {
   position: absolute;
   padding: 2rem;
 }
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 44.7rem;
+    height: 24.5rem;
+  }
+}
 .card-front {
   background: url("https://res.cloudinary.com/denpx8l6a/image/upload/v1705085796/ukopv6322b83yjnjloj5.png");
   background-size: 100%;
@@ -63,6 +79,32 @@ body {
   left: 0;
   top: 50%;
   z-index: 3;
+}
+@media screen and (min-width: 1440px) {
+  .card-front {
+    top: 20%;
+    left: 10%;
+  }
+}
+.card-front__circle-group {
+  display: flex;
+  align-items: center;
+}
+.card-front__circle {
+  background-color: orangered;
+  border-radius: 50%;
+}
+.card-front__circle--white {
+  width: 3rem;
+  height: 3rem;
+  background-color: hsl(0, 0%, 100%);
+  margin-right: 1rem;
+}
+.card-front__circle--hollow {
+  background: transparent;
+  border: 1px solid hsl(0, 0%, 100%);
+  width: 1.35rem;
+  height: 1.35rem;
 }
 .card-front__content {
   position: absolute;
@@ -97,6 +139,12 @@ body {
   top: 0;
   z-index: 1;
 }
+@media screen and (min-width: 1440px) {
+  .card-back {
+    top: 110%;
+    left: 25%;
+  }
+}
 .card-back__cv {
   position: absolute;
   right: 13%;
@@ -110,9 +158,28 @@ body {
   padding: 8rem 3rem 0;
   width: 100%;
 }
+@media screen and (min-width: 1440px) {
+  .CardForm {
+    position: absolute;
+    width: 70%;
+    height: 100vh;
+    top: 0;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
 
 .form {
   width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .form {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 .form__group {
   display: block;
