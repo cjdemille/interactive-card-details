@@ -11,14 +11,15 @@ function App() {
   const [cardInfo, setCardInfo] = useState({ name: '', number: '', expM: '00', expY: '', cvv: '123' });
 
   return (
-    <>
+    <div className='App'>
+
       <CardDisplay cardInfo={cardInfo} />
 
       {!submitted ? <CardForm func={() => setSubmitted((s) => !s)} cardInfo={cardInfo} setCardInfo={setCardInfo} /> : <Completed func={() => setSubmitted((s) => !s)} />}
 
 
-      <Attribution />
-    </>
+      {/* <Attribution /> */}
+    </div>
   )
 }
 

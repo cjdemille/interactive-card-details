@@ -51,7 +51,7 @@ export default function CardForm({ func, cardInfo, setCardInfo }) {
                         <input type="text" className="form__input form__input--cvc" name="cvv" placeholder="e.g. 123" value={cardInfo.cvv} onChange={handleChange} />
                     </div>
                 </div>
-                <Button func={func}>Submit</Button>
+                <Button func={func}>Confirm</Button>
             </form>
         </div>
     )
