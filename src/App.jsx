@@ -8,7 +8,7 @@ import { useState } from 'react';
 function App() {
 
   const [submitted, setSubmitted] = useState(false);
-  const [cardInfo, setCardInfo] = useState({ name: '', number: '', expM: '00', expY: '', cvv: '123' });
+  const [cardInfo, setCardInfo] = useState({ name: '', number: '', expM: '', expY: '', cvv: '123' });
 
   return (
     <div className='App'>
