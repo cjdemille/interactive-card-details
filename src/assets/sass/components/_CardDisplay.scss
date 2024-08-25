@@ -8,6 +8,15 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (min-width:1440px) {
+        background: url($bg-main-desktop);
+        background-repeat: no-repeat;
+        background-position: top left;
+        height:100vh;
+        width:30%;
+        margin:0;
+    }
 }
 
 .cards {
@@ -25,6 +34,11 @@
     position: absolute;
     padding: 2rem;
 
+    @media screen and (min-width:1440px) {
+        width:44.7rem;
+        height:24.5rem;
+    }
+
     &-front {
         background: url($bg-card-front);
         background-size: 100%;
@@ -33,7 +47,34 @@
         top: 50%;
         z-index: 3;
 
+        @media screen and (min-width:1440px) {
+            top:20%;
+            left:10%;
+        }
 
+        &__circle-group{
+            display: flex;
+            align-items: center;
+        }
+
+        &__circle {
+            background-color: orangered;
+            border-radius: 50%;
+
+            &--white{
+                width:3rem; 
+                height: 3rem;
+                background-color: $color-white;
+                margin-right:1rem;
+            }
+
+            &--hollow{
+                background: transparent;
+                border:1px solid $color-white;
+                width:1.35rem; 
+                height:1.35rem;
+            }
+        }
         &__content {
             position: absolute;
             top: 50%;
@@ -71,6 +112,11 @@
         right: 0;
         top: 0;
         z-index: 1;
+
+        @media screen and (min-width:1440px) {
+            top:110%;
+            left:25%;
+        }
 
         &__cv {
             position: absolute;

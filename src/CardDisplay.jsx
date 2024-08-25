@@ -3,6 +3,11 @@ export default function CardDisplay({ cardInfo }) {
         <div className="CardDisplay">
             <section className="cards">
                 <section className="card card-front">
+                    <div className="card-front__circle-group">
+                        <div className="card-front__circle--white card-front__circle">&nbsp;</div>
+                        <div className="card-front__circle--hollow card-front__circle">&nbsp;</div>
+                    </div>
+                   
                     <div className="card-front__content">
                         <span className="card-front__number">
                             {`${cardInfo.number}`}
